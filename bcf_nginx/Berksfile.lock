@@ -1,0 +1,7 @@
+DEPENDENCIES
+  bcf_nginx
+    path: .
+    metadata: true
+
+GRAPH
+  bcf_nginx (1.0.0)
