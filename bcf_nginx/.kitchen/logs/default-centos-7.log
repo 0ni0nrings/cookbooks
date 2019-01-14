@@ -1,0 +1,14 @@
+I, [2019-01-13T16:41:42.591900 #13066]  INFO -- default-centos-7: -----> Destroying <default-centos-7>...
+I, [2019-01-13T16:41:42.668778 #13066]  INFO -- default-centos-7: UID                 PID                 PPID                C                   STIME               TTY                 TIME                CMD
+I, [2019-01-13T16:41:42.668941 #13066]  INFO -- default-centos-7: root                6577                6560                0                   16:07               ?                   00:00:00            /usr/sbin/init
+I, [2019-01-13T16:41:42.668971 #13066]  INFO -- default-centos-7: dbus                6832                6577                0                   16:07               ?                   00:00:00            /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+I, [2019-01-13T16:41:42.668997 #13066]  INFO -- default-centos-7: root                10802               6577                0                   16:09               ?                   00:00:00            nginx: master process /usr/sbin/nginx
+I, [2019-01-13T16:41:42.669019 #13066]  INFO -- default-centos-7: polkitd             10803               10802               0                   16:09               ?                   00:00:00            nginx: worker process
+I, [2019-01-13T16:41:42.669035 #13066]  INFO -- default-centos-7: polkitd             10804               10802               0                   16:09               ?                   00:00:00            nginx: worker process
+I, [2019-01-13T16:41:42.669054 #13066]  INFO -- default-centos-7: root                7676                6577                0                   16:07               ?                   00:00:00            /usr/sbin/sshd -D
+I, [2019-01-13T16:41:42.669070 #13066]  INFO -- default-centos-7: root                6644                6577                0                   16:07               ?                   00:00:00            /usr/lib/systemd/systemd-journald
+I, [2019-01-13T16:41:42.669085 #13066]  INFO -- default-centos-7: root                6830                6577                0                   16:07               ?                   00:00:00            /usr/lib/systemd/systemd-logind
+I, [2019-01-13T16:41:42.669103 #13066]  INFO -- default-centos-7: root                6659                6577                0                   16:07               ?                   00:00:00            /usr/lib/systemd/systemd-udevd
+I, [2019-01-13T16:41:43.193868 #13066]  INFO -- default-centos-7: 2b0003ad95e2a89ddd2dc2112e2e0d8424b3efe07c8048da7c9ec389a70c3740
+I, [2019-01-13T16:41:43.506254 #13066]  INFO -- default-centos-7: 2b0003ad95e2a89ddd2dc2112e2e0d8424b3efe07c8048da7c9ec389a70c3740
+I, [2019-01-13T16:41:43.517756 #13066]  INFO -- default-centos-7: Finished destroying <default-centos-7> (0m0.92s).
