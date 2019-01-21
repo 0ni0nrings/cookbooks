@@ -4,7 +4,7 @@
 #
 # Copyright:: 2019, The Authors, All Rights Reserved.
 
-search("users", "id:Alice OR id:Bob").each do |user_data|
+search("users", "id:Alice OR id:Bob OR id:Eve").each do |user_data|
   user user_data["id"] do
     comment user_data["comment"]
     uid user_data["uid"]
