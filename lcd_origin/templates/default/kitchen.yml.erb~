@@ -25,5 +25,5 @@ suites:
       - recipe[<%= cookbook_name %>::default]
     verifier:
       inspec_tests:
-        - test/integration/default
+        - test/smoke/default
     attributes:

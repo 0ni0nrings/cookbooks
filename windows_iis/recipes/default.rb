@@ -18,6 +18,7 @@ end
 =end
 
 # PowerShell way to do Install IIS
+# $Features | ForEach-Object {Add-WindowsFeature $_}
 powershell_script 'Install IIS' do
   code <<-EOH
   $Features = @('Web-Server', 'Web-WebServer')
