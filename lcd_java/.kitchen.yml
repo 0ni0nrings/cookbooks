@@ -1,0 +1,36 @@
+---
+driver:
+  name: docker
+  privileged: true
+  use_sudo: false
+
+provisioner:
+  name: chef_zero
+  # You may wish to disable always updating cookbooks in CI or other testing environments.
+  # For example:
+  #   always_update_cookbooks: <%= !ENV['CI'] %>
+  always_update_cookbooks: true
+  
+verifier:
+  name: inspec
+
+platforms:
+  - name: centos-7
+  - name: centos-6.8
+
+suites:
+  - name: dev
+    driver:
+    run_command: /usr/sbin/init
+    run_list:
+      - recipe[lcd_java::default]
+    attributes: { 'java': { 'jdk_version': '7' } }
+    excludes: centos-6.8
+  - name: prod
+    driver:
+    run_command: /usr/sbin/init
+    run_list:
+      - recipe[lcd_java::default]
+    attributes: { 'java': { 'jdk_version': '6' } }
+    includes: centos-6.8
+

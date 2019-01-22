@@ -4,8 +4,10 @@
 #
 # Copyright:: 2019, John Doe, All Rights Reserved.
 
-package 'httpd' do
-  action :install
+['net-tools','httpd'].each do |pkg|
+  package pkg do
+    action :install
+    end
 end
 
 service 'httpd' do
